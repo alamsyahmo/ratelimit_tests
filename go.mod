@@ -3,7 +3,7 @@ module github.com/alamsyahmo/redis_tests
 go 1.25.5
 
 require (
-	github.com/moneyforward/mf-common-go v1.2.2-0.20251218193314-b433b485c1ac
+	github.com/moneyforward/mf-common-go v1.2.2-0.20251219052256-2195406f7925
 	github.com/redis/go-redis/v9 v9.17.2
 )
 

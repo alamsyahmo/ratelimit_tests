@@ -14,6 +14,8 @@ github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f h1:lO4WD4F/r
 github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f/go.mod h1:cuUVRXasLTGF7a8hSLbxyZXjz+1KgoB3wDUb6vlszIc=
 github.com/moneyforward/mf-common-go v1.2.2-0.20251218193314-b433b485c1ac h1:jbYJDXBXaAKCrkn+nir8/rFr9I5EVtY8nHOpUKscdeU=
 github.com/moneyforward/mf-common-go v1.2.2-0.20251218193314-b433b485c1ac/go.mod h1:4EIXsqiMLvqMYNN5gQRgqf71CGDiqv+p1QUlOsOkPe4=
+github.com/moneyforward/mf-common-go v1.2.2-0.20251219052256-2195406f7925 h1:whtp2/JRJf4e7qumGAVMGPohPj3tEHHG451fcrjkyRc=
+github.com/moneyforward/mf-common-go v1.2.2-0.20251219052256-2195406f7925/go.mod h1:4EIXsqiMLvqMYNN5gQRgqf71CGDiqv+p1QUlOsOkPe4=
 github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 h1:Jamvg5psRIccs7FGNTlIRMkT8wgtp5eCXdBlqhYGL6U=
 github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/redis/go-redis/v9 v9.17.2 h1:P2EGsA4qVIM3Pp+aPocCJ7DguDHhqrXNhVcEp4ViluI=
