@@ -87,6 +87,28 @@ The output includes:
 - heap delta + max heap observed (approx)
 - GC count delta
 
+### Results (sample output)
+
+```text
+impl           | scenario               |      total |    allowed |     denied |     errs |     req/s |     heapΔ |   maxHeap |    GCs
+----------------------------------------------------------------------------------------------------------------------------------
+mf-common-go   | normal_100rps_20s      |       2050 |       2003 |         47 |        0 |     102.5 |   3381944 |   4964992 |      3
+redis_rate/v10 | normal_100rps_20s      |       2050 |       2002 |         48 |        0 |     102.5 |     14616 |   5286952 |      1
+mf-common-go   | slow_then_burst_20s    |      15110 |       1768 |      13342 |        0 |     755.2 |     14592 |   6861896 |      4
+redis_rate/v10 | slow_then_burst_20s    |      15110 |       1643 |      13467 |        0 |     755.2 |     21496 |   7236664 |      4
+mf-common-go   | burst_1000rps_20s      |      20050 |       2193 |      17857 |        0 |    1002.1 |     19064 |   7177592 |      4
+redis_rate/v10 | burst_1000rps_20s      |      20050 |       2003 |      18047 |        0 |    1002.2 |      3896 |   7375128 |      5
+
+impl           | scenario               |  TotalAllocΔ
+------------------------------------------------------------
+mf-common-go   | normal_100rps_20s      |      4983320
+redis_rate/v10 | normal_100rps_20s      |      1584888
+mf-common-go   | slow_then_burst_20s    |     10069568
+redis_rate/v10 | slow_then_burst_20s    |     11736160
+mf-common-go   | burst_1000rps_20s      |     13352832
+redis_rate/v10 | burst_1000rps_20s      |     15542144
+```
+
 ## Test scenarios covered
 
 See `main_test.go`:
