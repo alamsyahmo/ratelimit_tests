@@ -45,6 +45,48 @@ To see test output (e.g. `fmt.Printf(...)` logs), run with verbose mode:
 go test -v ./...
 ```
 
+## Comparison load test: `redis_rate/v10` vs `mf-common-go`
+
+There is a long-running comparison test that runs **3 scenarios** for **20 seconds each** (so ~2 minutes total):
+
+- **normal**: 100 req/s for 20s
+- **slow then burst**: default 10 req/s for 5s, then 1000 req/s for 15s
+- **burst**: 1000 req/s for 20s
+
+All scenarios use a limiter configured with:
+
+- **refill rate**: 100 tokens/second
+- **capacity**: 100 (default; can be overridden)
+
+Run it:
+
+```bash
+go test -v -run TestComparison_redis_rate_vs_mf_common_go .
+```
+
+Useful knobs (optional):
+
+- **`REFILL_RATE`**: tokens/sec (default `100`)
+- **`CAPACITY`**: bucket capacity / burst (default `100`)
+- **`CONCURRENCY`**: number of goroutines generating load (default `50`)
+- **`DURATION`**: scenario duration (default `20s`)
+- **`SLOW_RPS`**: case #2 slow phase rps (default `10`)
+- **`SLOW_DURATION`**: case #2 slow phase duration (default `5s`)
+- **`BURST_RPS`**: burst rps for cases #2/#3 (default `1000`)
+
+Example:
+
+```bash
+REFILL_RATE=100 CAPACITY=100 CONCURRENCY=50 go test -v -run TestComparison_redis_rate_vs_mf_common_go .
+```
+
+The output includes:
+
+- achieved **req/s**
+- total/allowed/denied/errors
+- heap delta + max heap observed (approx)
+- GC count delta
+
 ## Test scenarios covered
 
 See `main_test.go`:

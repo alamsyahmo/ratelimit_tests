@@ -12,6 +12,8 @@ github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc h1:U9qPSI2PIWSS1
 github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f h1:lO4WD4F/rVNCu3HqELle0jiPLLBs70cWOduZpkS1E78=
 github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f/go.mod h1:cuUVRXasLTGF7a8hSLbxyZXjz+1KgoB3wDUb6vlszIc=
+github.com/go-redis/redis_rate/v10 v10.0.1 h1:calPxi7tVlxojKunJwQ72kwfozdy25RjA0bCj1h0MUo=
+github.com/go-redis/redis_rate/v10 v10.0.1/go.mod h1:EMiuO9+cjRkR7UvdvwMO7vbgqJkltQHtwbdIQvaBKIU=
 github.com/moneyforward/mf-common-go v1.2.2-0.20251218193314-b433b485c1ac h1:jbYJDXBXaAKCrkn+nir8/rFr9I5EVtY8nHOpUKscdeU=
 github.com/moneyforward/mf-common-go v1.2.2-0.20251218193314-b433b485c1ac/go.mod h1:4EIXsqiMLvqMYNN5gQRgqf71CGDiqv+p1QUlOsOkPe4=
 github.com/moneyforward/mf-common-go v1.2.2-0.20251219052256-2195406f7925 h1:whtp2/JRJf4e7qumGAVMGPohPj3tEHHG451fcrjkyRc=
